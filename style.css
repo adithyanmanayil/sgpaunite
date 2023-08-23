@@ -1,0 +1,197 @@
+/*
+<<<COLOR PALETTE>>>
+main: #352F44 #0c1117;
+main2: #5C5470 #1B2430;
+low2: #B9B4C7;
+low: #FAF0E6;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button{
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+*{
+    top: 0;
+    left: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 500;
+    color: #09d0b9;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #1B2430;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 2560px;
+}
+
+.container{
+    height: auto;
+    background-color: #0c1117;
+}
+.clear{
+    float: none;
+}
+.border-div{
+    padding: 0.2em;
+    border-radius: 10px;
+    background-color: #09d0b9;
+}
+
+.labell1{
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+/*admin panel*/
+.admin-split{
+    display: inline-block;
+}
+
+.addsub{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    padding: 1%;
+    margin: 0 auto;
+    background-color: #1B2430;
+}
+.addsub>div{
+    width: 100%;
+    height: 100vh;
+    padding: 4%;
+    border-radius: 10px;
+    background-color: #0c1117;
+}
+.addsub>div>label{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.add>input{
+    display: block;
+    margin: 5% auto;
+}
+
+.home-split{
+    display: inline-block;
+}
+.cgpadiv{
+    float: left;
+    width: 30%;
+    height: 100vh;
+    padding: 2%;
+    background-color: #0c1117;
+}
+.sgpadiv{
+    float: right;
+    width: 70%;
+    height: 60vh;
+    padding: 10%;
+    margin: 0 auto;
+    background-color: #1B2430;
+}
+.cgpadivmob{
+    display: none;
+    width: 100%;
+    height: 25vh;
+    padding: 2%;
+    margin-top: 7.5%;
+    border-radius: 10px;
+    background-color: #0c1117;
+}
+
+.halfdiv{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.halfdiv>.dd-btn{
+    width: 45%;
+    margin: 0 auto;
+    float: left;
+}
+
+.basic{
+    padding: 4%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.basic-items{
+    margin: 4% auto;
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*button styles*/
+.dd-btn{
+    width: 90%;
+    height: 40px;
+    background-color: #29313b;
+}
+.text-inputs{
+    width: 90%;
+    height: 40px;
+    padding: 2%;
+    border-radius: 10px;
+    color: #09d0b9;
+    background-color: #29313b;
+}
+
+.btn{
+    width: 50%;
+    height: 40px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0  #0c1117 ;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.btn:hover{
+    color: #0c7065;
+    background-color: #4bfde8;
+    transition: all 0.8s ease;
+}
+.btn:active{
+    width: 55%;
+    background-color: #131515;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .sgpadiv{
+        width: 100%;
+        padding: 5%;
+    }
+    .cgpadiv{
+        display: none;
+    }
+    .cgpadivmob{
+        width: 100%;
+        display: block;
+    }
+    .addsub{
+        margin: 2% auto;
+    }
+}
